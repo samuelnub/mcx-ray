@@ -1956,6 +1956,8 @@ __global__ void mcx_main_loop(uint media[], OutputType field[], float genergy[],
                     rotatevector(&v, stheta, ctheta, sphi, cphi);
                 }
 
+                // TODO: alter scattered photon energy AND prevent further scattering events
+
                 v.nscat++;
 
                 /** Update stokes parameters */
